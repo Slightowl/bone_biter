@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tainportfoliowebpage/constants.dart';
+import 'package:tainportfoliowebpage/screens/shop_front.dart';
+import 'package:page_transition/page_transition.dart';
 
 class TopAppBar extends StatelessWidget {
   const TopAppBar({
@@ -10,31 +12,49 @@ class TopAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title: Text('Coming Soon...', style: kTitleText),
+      title: GestureDetector(
+        onTap: () {
+          Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: Shop()));
+        },
+          child: Text('BoneBiter', style: kTitleText)),
       backgroundColor: Color(0xFF000000),
-      leading: Image.asset('images/skull-placeholder.png'),
+      leading: Image.asset('images/small_icon.png'),
+
       /*actions: [
-        Text(
-          'Shop',
-          style: kMenuText,
+
+        Padding(
+          padding: EdgeInsets.only(right: 200.0),
+          child: Row(
+            children: [
+              Center(
+                child: Text(
+                  'Login',
+                  style: kMenuText,
+                ),
+              ),
+              SizedBox(
+                width: 40.0,
+              ),
+              Center(
+                child: Text(
+                  'Basket',
+                  style: kMenuText,
+                ),
+              ),
+              SizedBox(
+                width: 40.0,
+              ),
+              Center(
+                child: Text(
+                  'Contact',
+                  style: kMenuText,
+                ),
+              ),
+            ],
+          ),
         ),
-        SizedBox(
-          width: 40.0,
-        ),
-        Text(
-          'About',
-          style: kMenuText,
-        ),
-        SizedBox(
-          width: 40.0,
-        ),
-        Text(
-          'Contact',
-          style: kMenuText,
-        ),
-        SizedBox(
-          width: 600.0,
-        )
+
+
       ],*/
     );
   }
