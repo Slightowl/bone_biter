@@ -6,6 +6,7 @@ import 'package:page_transition/page_transition.dart';
 import 'package:tainportfoliowebpage/screens/prints_home.dart';
 import 'package:tainportfoliowebpage/components/navigation_drawer.dart';
 import 'package:tainportfoliowebpage/components/top_app_bar.dart';
+import 'package:tainportfoliowebpage/constants.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -21,11 +22,10 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: PreferredSize(
           preferredSize: const Size.fromHeight(50), child: TopAppBar()),
-
       endDrawer: NavDrawer(),
       body: SingleChildScrollView(
         child: Container(
-          height: 1500.0,
+          height: 1150.0,
           decoration: BoxDecoration(
               gradient: LinearGradient(
                   begin: Alignment.topLeft,
@@ -98,18 +98,41 @@ class _HomeScreenState extends State<HomeScreen> {
                         },
                         child: SlideInRight(
                           child: Pulse(
-                            child: Image(image: AssetImage('images/print-icon.png'),
+                            child: Image(
+                                image: AssetImage('images/print-icon.png'),
                                 width: 400,
-                                height: 400
-                            ),
+                                height: 400),
                           ),
                         ),
                       ),
-                      SizedBox(
-                        height: 50,
+                      SizedBox(height: 50),
+                      Container(
+                        height: 3,
+                        width: 400,
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                              colors: [Color(0xFF1bef15), Color(0xFF02cde9)]),
+                        ),
                       ),
-                      SizedBox(
-                        height: 50,
+                      SizedBox(height: 50),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text(
+                            'About',
+                          ),
+                          Text(
+                            'Search',
+                          ),
+                          Text(
+                            'Contact us',
+                          ),
+                          Text(
+                            'Connect',
+                          )
+                        ],
                       ),
                     ],
                   ),

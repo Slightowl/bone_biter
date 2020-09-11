@@ -15,8 +15,8 @@ const TextStyle kTitleText = TextStyle(
 );
 
 const TextStyle kBoxText = TextStyle(
-    fontSize: 50.0,
-    color: Color(0xFF000000),
+    fontSize: 20.0,
+    color: Color(0xFF02cde9),
     fontFamily: 'Monoton'
 );
 
