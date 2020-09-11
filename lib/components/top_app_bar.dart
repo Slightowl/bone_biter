@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tainportfoliowebpage/constants.dart';
-import 'package:tainportfoliowebpage/screens/shop_front.dart';
+import 'package:tainportfoliowebpage/screens/home.dart';
 import 'package:page_transition/page_transition.dart';
 
 class TopAppBar extends StatelessWidget {
@@ -14,7 +14,7 @@ class TopAppBar extends StatelessWidget {
     return AppBar(
       title: GestureDetector(
         onTap: () {
-          Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: Shop()));
+          Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: HomeScreen()));
         },
           child: Text('BoneBiter', style: kTitleText)),
       backgroundColor: Color(0xFF000000),

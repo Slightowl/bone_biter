@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'constants.dart';
-import 'screens/shop_front.dart';
 import 'screens/home.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
