@@ -21,9 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: PreferredSize(
           preferredSize: const Size.fromHeight(50), child: TopAppBar()),
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor:
-      ),
+
       endDrawer: NavDrawer(),
       body: SingleChildScrollView(
         child: Container(
