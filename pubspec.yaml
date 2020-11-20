@@ -16,7 +16,7 @@ dependencies:
   flutter_animator: ^2.1.0
   cupertino_icons: ^0.1.3
   social_media_buttons: ^0.1.2
-  page_transition: ^1.1.6
+  page_transition: ^1.1.7+2
   responsive_framework: ^0.0.8
   draggable_scrollbar: ^0.0.4
 

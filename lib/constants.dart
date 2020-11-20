@@ -14,6 +14,12 @@ const TextStyle kTitleText = TextStyle(
   fontFamily: 'Monoton'
 );
 
+const TextStyle kMainScreenBottomText = TextStyle(
+    fontSize: 15.0,
+    color: Color(0xFFeeff05),
+    fontFamily: 'Monoton'
+);
+
 const TextStyle kBoxText = TextStyle(
     fontSize: 20.0,
     color: Color(0xFF02cde9),

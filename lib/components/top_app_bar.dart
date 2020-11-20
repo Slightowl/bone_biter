@@ -16,7 +16,7 @@ class TopAppBar extends StatelessWidget {
         onTap: () {
           Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: HomeScreen()));
         },
-          child: Text('BoneBiter', style: kTitleText)),
+          child: Text('BoneBiter - under construction', style: kTitleText)),
       backgroundColor: Color(0xFF000000),
       leading: Image.asset('images/small_icon.png'),
 

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
+import 'package:tainportfoliowebpage/screens/gallery.dart';
 import 'package:tainportfoliowebpage/screens/prints_home.dart';
 import 'package:tainportfoliowebpage/screens/commissions_home.dart';
+import 'package:tainportfoliowebpage/screens/home.dart';
 
 class NavDrawer extends StatefulWidget {
   @override
@@ -31,26 +33,30 @@ class _NavDrawerState extends State<NavDrawer> {
               decoration: BoxDecoration(
                 color: Colors.black,
               ),
+
+            ),
+            ListTile(
+              title: Text('Home'),
+              onTap: () {
+                Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: HomeScreen()));
+              },
             ),
             ListTile(
               title: Text('Prints'),
               onTap: () {
-                Navigator.push(
-                    context,
-                    PageTransition(
-                        type: PageTransitionType.fade, child: PrintHome()));
-                Navigator.pop(context);
+                Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: PrintHome()));
               },
             ),
             ListTile(
               title: Text('Commissions'),
               onTap: () {
-                Navigator.push(
-                    context,
-                    PageTransition(
-                        type: PageTransitionType.fade,
-                        child: CommissionHome()));
-                Navigator.pop(context);
+                Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: CommissionHome()));
+              },
+            ),
+            ListTile(
+              title: Text('The archive'),
+              onTap: () {
+                Navigator.push(context, PageTransition(type: PageTransitionType.fade, child: GalleryHome()));
               },
             ),
             ListTile(

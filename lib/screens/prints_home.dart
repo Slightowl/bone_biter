@@ -6,14 +6,12 @@ import 'package:tainportfoliowebpage/components/container_box_zoom.dart';
 import 'package:tainportfoliowebpage/constants.dart';
 import 'package:flutter_animator/flutter_animator.dart';
 
-
 class PrintHome extends StatefulWidget {
   @override
   _PrintHomeState createState() => _PrintHomeState();
 }
 
 class _PrintHomeState extends State<PrintHome> {
-
   GlobalKey<AnimatorWidgetState> _key = GlobalKey<AnimatorWidgetState>();
 
   @override

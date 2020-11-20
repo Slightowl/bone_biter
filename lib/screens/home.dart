@@ -122,15 +122,19 @@ class _HomeScreenState extends State<HomeScreen> {
                         children: [
                           Text(
                             'About',
+                            style: kMainScreenBottomText,
                           ),
                           Text(
                             'Search',
+                            style: kMainScreenBottomText,
                           ),
                           Text(
                             'Contact us',
+                            style: kMainScreenBottomText,
                           ),
                           Text(
                             'Connect',
+                            style: kMainScreenBottomText,
                           )
                         ],
                       ),
